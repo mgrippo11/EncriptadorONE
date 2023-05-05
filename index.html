@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>EncriptadorONE</title>
+</head>
+<body>
+    <div class="contenedor"></div>
+    <header>
+        <img src="./img/logo.png" class="logo" alt="logo">
+    </header>
+    <main>
+        <section class="contenedor1">
+            <textarea class="contenedor1_textoIngreso" name="texto" id="textarea" cols="30"
+                rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
+            <div class="informacion">
+                <img src="./img/Vector.png" alt="exclamacion" class="informacion_imagen">
+                <p class="informacion_parrafo">solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="cont_btn">
+                <button class="btn btn_encriptar" id="encriptar">cifrar</button>
+                <button class="btn btn_desencriptar" id="desencriptar">descifrar</button>
+            </div>
+        </section>
+        <section class="contenedor_resultado">
+            <textarea style="display:none;" class="contenedor_resultado_texto" name="texto" id="resultado" cols="30"
+                rows="10" placeholder="Escribe aquí tu texto"></textarea>
+            <div id="ocultar">
+                <img src="./img/Muñeco.png" alt="Muneco" class="ocultar_muneco">
+                <h2 class="ocultar_titulo">no se encontro el mensaje</h2>
+                <p class="ocultar_parrafo">ingrese el mensaje a cifrar o descifrar</p>
+            </div>
+            <div class="cont_btn_copiar">
+                <button class="btn btn_copiar" id="copiar" hidden>copiar</button>
+            </div>
+        </section>
+    </main>
+    </div>
+</body>
+<script type="text/javascript" src="./encriptador.js"></script>
+</html>
